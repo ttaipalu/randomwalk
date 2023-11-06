@@ -48,7 +48,7 @@ basic.forever(function () {
     Changing_direction = 0
 })
 basic.forever(function () {
-    if (cuteBot.trackSide(cuteBot.MbPins.Left, cuteBot.MbEvents.FindLine) || cuteBot.trackSide(cuteBot.MbPins.Right, cuteBot.MbEvents.FindLine)) {
+    if (cuteBot.trackSide(cuteBot.MbPins.Left, cuteBot.MbEvents.LoseLine) || cuteBot.trackSide(cuteBot.MbPins.Right, cuteBot.MbEvents.LoseLine)) {
         At_border = 1
         music.play(music.builtinPlayableSoundEffect(soundExpression.yawn), music.PlaybackMode.InBackground)
         basic.pause(1000)
